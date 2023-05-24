@@ -4,4 +4,4 @@ install dependancies
 
 Setup install the module
 
-launche tests on the module (python -m unittest)
+launche tests on the module
