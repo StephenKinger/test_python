@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-import tornado.web
+import tornado
 
 class HelloWorldHandler(tornado.web.RequestHandler):
     def get(self):

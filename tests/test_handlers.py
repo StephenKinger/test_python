@@ -1,5 +1,4 @@
 #-*- coding: utf-8 -*-
-import unittest
 from simpleservice.simplehandlers import HelloWorldHandler, GetStyleVersionList
 import tornado.web
 import tornado.testing

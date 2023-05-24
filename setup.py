@@ -33,7 +33,7 @@ setup(
     # python recursivement dans le dossier courant.
     # C'est pour cette raison que l'on a tout mis dans un seul dossier:
     # on peut ainsi utiliser cette fonction facilement
-    packages=find_packages(),
+    packages=find_packages('simpleservice'),
 
     # votre pti nom
     author="Stephen KINGER",
@@ -63,7 +63,6 @@ setup(
     include_package_data=True,
 
     # Une url qui pointe vers la page officielle de votre lib
-    url='http://github.com/StephenKinger/privaan',
 
     # Il est d'usage de mettre quelques metadata à propos de sa lib
     # Pour que les robots puissent facilement la classer.
@@ -81,7 +80,7 @@ setup(
         "Topic :: Recruit",
     ],
 
-    install_requires=['mock>=2.0.0','pygtail>=0.7.0','docopt>=0.6.2','requests>=2.12.4', 'tornado'],
+    install_requires=['mock>=2.0.0','pygtail>=0.7.0','docopt>=0.6.2','requests>=2.12.4', 'tornado', 'pytest'],
 
     # C'est un système de plugin, mais on s'en sert presque exclusivement
     # Pour creer des commandes, comme "django-admin".
